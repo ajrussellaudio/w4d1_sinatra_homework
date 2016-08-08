@@ -1,6 +1,7 @@
 require "sinatra"
 require "sinatra/contrib/all"
 require "json"
+require_relative "./models/word_formatter"
 
 get "/" do
   erb(:my_info)
