@@ -8,4 +8,7 @@ class WordFormatter
     return @string.upcase
   end
 
+  def camelcase()
+  end
+
 end

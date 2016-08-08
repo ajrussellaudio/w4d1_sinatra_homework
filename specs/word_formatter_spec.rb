@@ -13,4 +13,8 @@ class TestWordFormatter < MiniTest::Test
     assert_equal("CODE CLAN 1234", @test_words.my_upcase)
   end
 
+  def test_camelcase
+    assert_equal("CodeClan1234", @test_words.camelcase)
+  end
+
 end
