@@ -9,6 +9,10 @@ class WordFormatter
   end
 
   def camelcase()
+    output = @string.split(' ').map do |word|
+      word.capitalize
+    end
+    return output.join('')
   end
 
 end
