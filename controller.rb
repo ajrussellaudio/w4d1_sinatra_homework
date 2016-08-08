@@ -21,7 +21,7 @@ get "/address" do
   return info.to_json()
 end
 
-get "/camelcase/:word1/:word2" do
+get "/camelcase_json/:word1/:word2" do
   content_type( :json )
   input = "#{params[:word1]} #{params[:word2]}"
   words = WordFormatter.new(input)
@@ -30,4 +30,10 @@ get "/camelcase/:word1/:word2" do
     output: words.camelcase
   }
   return output.to_json()
+end
+
+get "/camelcase_html/:word1/:word2" do
+  input = "#{params[:word1]} #{params[:word2]}"
+  @output = WordFormatter.new(input).camelcase
+  erb(:camelcase)
 end

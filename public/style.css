@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+body p {
+  margin: 25px 42px; 
+}
+
+#header {
+  margin: 0px;
+  padding: 8px 42px;
+  border: 1px white;
+  border-bottom-style: solid;
+}
+
+#header h3 {
+  float: right;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  display: inline;
+  padding: 8px;
+  border: 1px white solid;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: deeppink;
+}
