@@ -14,5 +14,8 @@ get "/address" do
     postcode: 'e13 zqf', 
     phone: '0131558030'
   }
+  postcode = WordFormatter.new(info[:postcode])
+  formatted_postcode = postcode.my_upcase
+  info[:postcode] = formatted_postcode
   return info.to_json()
 end

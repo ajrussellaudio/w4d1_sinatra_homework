@@ -4,7 +4,7 @@ class WordFormatter
     @string = string
   end
 
-  def upcase()
+  def my_upcase()
     return @string.upcase
   end
 
